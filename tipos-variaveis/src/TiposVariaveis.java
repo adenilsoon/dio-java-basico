@@ -1,4 +1,4 @@
-public class App {
+public class TiposVariaveis {
     public static void main(String[] args) throws Exception {
         
         /* O valor 2.500 em double não deve ser declarado com ponto ou virgula, apenas o valor bruto. Caso o valor possua centavos, aí sim coloca-se ponto como por exemplo 2500.65 (Dois mil  e quinhentos e sessenta e cinco centavos) */
