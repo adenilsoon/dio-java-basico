@@ -1,18 +1,5 @@
-## Getting Started
+## Tipos e Variáveis
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto foi criado para fazer o acompanhamento de código e explicações do módulo sobre `Tipos e Variáveis` de `Java Básico`, curso que faz parte do Bootcamp Back-end em Java promovido pelo Santander através da plataforma da [Digital Innovation One](https://dio.me).
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Nesse módulo é discutido sobre os `tipos de dados em Java` e sobre as `Varíaveis e como estas são declaradas`.
