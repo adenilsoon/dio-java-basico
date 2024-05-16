@@ -25,20 +25,22 @@ public class SmartTv {
 
     public void aumentarVolume() {
         if (volume == 100) {
-            System.out.println("100 é o volume máximo");
+            System.out.println("\n100 é o volume máximo");
         } 
-        else
+        else {
             volume++;
             System.out.println("Aumentando volume para " + volume);
+        }
     }
 
     public void diminuirVolume() {
         if (volume == 0) {
             System.out.println("0 é o volume minímo. A TV está em MUDO!");
         }   
-        else
+        else {
             volume--;
             System.out.println("Diminuindo volume para " + volume);
+        }
     }
 
     public void aumentarCanal() {
