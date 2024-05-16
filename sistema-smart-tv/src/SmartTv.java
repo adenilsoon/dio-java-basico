@@ -1,3 +1,6 @@
+import java.util.Scanner;
+import java.io.IOException;
+
 public class SmartTv {
     
     boolean ligada = true;
@@ -21,13 +24,21 @@ public class SmartTv {
     }
 
     public void aumentarVolume() {
-        volume++;
-        System.out.println("Aumentando volume para " + volume);
+        if (volume == 100) {
+            System.out.println("100 é o volume máximo");
+        } 
+        else
+            volume++;
+            System.out.println("Aumentando volume para " + volume);
     }
 
     public void diminuirVolume() {
-        volume--;
-        System.out.println("Diminuindo volume para " + volume);
+        if (volume == 0) {
+            System.out.println("0 é o volume minímo. A TV está em MUDO!");
+        }   
+        else
+            volume--;
+            System.out.println("Diminuindo volume para " + volume);
     }
 
     public void aumentarCanal() {
@@ -50,6 +61,9 @@ public class SmartTv {
         System.out.println("Canal alterado para " + novoCanal);
 
     }
+
+
+    
 
 
 }

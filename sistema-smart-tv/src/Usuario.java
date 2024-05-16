@@ -1,7 +1,9 @@
+import java.io.IOException;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Usuario {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException, InterruptedException {
         
         Scanner ler = new Scanner(System.in);
         SmartTv smartTv = new SmartTv();
@@ -11,14 +13,13 @@ public class Usuario {
         System.out.println("Atualmente você está assistindo ao canal " + smartTv.canal + " com o volume ajustado no " + smartTv.volume);
         
         while (smartTv.ligada == true) {
-        System.out.printf("\nSelecione abaixo alguma opção: \n\n 1 - Ajustar volume \n 2 - Selecionar canal \n 3 - Avançar canal \n 4 - Voltar canal \n 5 - Desligar TV\n\n>>> ");
+        System.out.printf("\nSelecione abaixo alguma opção: \n\n 1 - Ajustar volume \n 2 - Selecionar canal \n 3 - Avançar canal \n 4 - Voltar canal \n 5 - Aumentar volume \n 6 - Diminuir volume \n 7 - Desligar TV\n\n>>> ");
         opcaoMenu = ler.nextInt();
 
         switch (opcaoMenu) {
             case 1:
                 System.out.printf("Informe o número para o qual o volume deverá ser alterado: ");
                 smartTv.novoVolume = ler.nextInt();
-
                 smartTv.alterarVolume(smartTv.novoVolume);
                 break;
             
@@ -38,6 +39,14 @@ public class Usuario {
                 break;
 
             case 5:
+                smartTv.aumentarVolume();
+                break;
+
+            case 6:
+                smartTv.diminuirVolume();
+                break;
+
+            case 7:
                 smartTv.desligar();
                 break;
 
