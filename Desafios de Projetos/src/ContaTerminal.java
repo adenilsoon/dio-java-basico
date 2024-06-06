@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class ContaTerminal {
+    @SuppressWarnings("resource")
     public static void main(String[] args) throws Exception {
         //TODO: Conhecer e importar a classe Scanner
         //Exibir mensagens ao usuário
