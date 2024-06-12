@@ -1,24 +1,30 @@
 import java.util.concurrent.ThreadLocalRandom;
 public class ProcessoSeletivo {
     public static void main(String[] args) throws Exception {
-        System.out.println("Processo Seletivo");
+        System.out.println("PROCESSO SELETIVO");
+        System.out.print("\n");
 
         /*analisarCandidato(1500.0);
         analisarCandidato(2000.0);
         analisarCandidato(2500.0);
         */
 
-        selecaoCandidatos();
+        imprimirSelecionados();
 
     }
 
     static void imprimirSelecionados(){
-        String [] candidatos = {String [] candidatos = {"ADENILSON","MÁRCIA","JULIA","PAULO","AUGUSTO"};
+        String [] candidatos = {"ADENILSON","MÁRCIA","JULIA","PAULO","AUGUSTO"};
         System.err.println("Imprimindo a lista de candidatos informando o indice do elemento");
 
         for(int indice = 0; indice < candidatos.length; indice++){
-            System.out.println("O candidato de n° " + (indice+1) + " é o " + candidatos[indice]);
+            System.out.println("O candidato(a) de n° " + (indice+1) + " é o " + candidatos[indice]);
             
+        }
+        System.out.println("Forma abreviada de interação (sem apresentar o índice): for each");
+        
+        for(String candidato: candidatos){
+            System.out.println("O candidato(a) selecionado foi " + candidato);
         }
     }
 
