@@ -22,7 +22,7 @@ public class Contador {
         }catch(ParametrosInvalidosException e){
             // Imprimrir a mensagem: O segundo parâmetro deve ser maior
             System.out.println();
-            System.out.println("O segundo parâmetro deve ser maior que o primeiro");
+            System.out.println(e.getMessage());
         }catch(InputMismatchException e){
             System.out.println("Por favor, digite apenas números inteiros válidos");
         }
