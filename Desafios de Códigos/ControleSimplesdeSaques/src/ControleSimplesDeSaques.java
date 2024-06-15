@@ -5,7 +5,7 @@ public class ControleSimplesDeSaques {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.printf("Informe o valor aa ser definido como limite diário: ");
+        System.out.printf("Informe o valor a ser definido como limite diário: ");
         double limiteDiario = scanner.nextDouble();
 
         // Loop for para iterar sobre os saques
