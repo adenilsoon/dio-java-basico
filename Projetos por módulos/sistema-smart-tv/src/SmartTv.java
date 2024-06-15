@@ -20,7 +20,9 @@ public class SmartTv {
 
     public void desligar() {
         ligada = false;
+        System.out.println();
         System.out.println("Desligando SmartTV... Até mais! :)");
+        System.out.println();
     }
 
     public void aumentarVolume() {
@@ -44,17 +46,28 @@ public class SmartTv {
     }
 
     public void aumentarCanal() {
-        canal++;
-        System.out.println("Aumentando canal para " + canal);
+        if(canal == 99){
+            canal = 1;
+            System.out.println("Canal alterado para " + canal);
+        }else{
+            canal++;
+            System.out.println("Canal alterado para " + canal);
+        }
     }
 
     public void diminuirCanal() {
-        canal--;
-        System.out.println("Diminuindo canal para " + canal);
+        if(canal == 1){
+            canal = 99;
+            System.out.println("Canal alterado para " + canal);
+        }else{
+            canal--;
+            System.out.println("Canal alterado para " + canal);
+        }
     }
 
     public void alterarVolume(int novoVolume) {
         volume = novoVolume;
+        System.out.println();
         System.out.println("Volume alterado para " + novoVolume);
     } 
 

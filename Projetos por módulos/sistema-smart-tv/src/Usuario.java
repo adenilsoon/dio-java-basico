@@ -18,12 +18,14 @@ public class Usuario {
 
         switch (opcaoMenu) {
             case 1:
+                System.out.println();
                 System.out.printf("Informe o número para o qual o volume deverá ser alterado: ");
                 smartTv.novoVolume = ler.nextInt();
                 smartTv.alterarVolume(smartTv.novoVolume);
                 break;
             
             case 2:
+                System.out.println();
                 System.out.printf("Informe o canal que você deseja assistir: ");
                 smartTv.novoCanal = ler.nextInt();
                 
@@ -51,6 +53,7 @@ public class Usuario {
                 break;
 
             default:
+                System.out.println();
                 System.out.println("Hmm, opção indisponível. Visualize na tela as opções e selecione um número entre 1 e 5.");
                 break;
              }
